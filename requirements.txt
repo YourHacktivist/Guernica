@@ -1,0 +1,5 @@
+matplotlib==3.6.3
+pathlib2==2.3.7.post1
+rich==13.9.2
+regex==2022.10.31
+requests==2.26.0
