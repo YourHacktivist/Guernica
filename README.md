@@ -81,7 +81,7 @@ A 0–100 metric that quantifies disruption introduced by rule changes.
 
 Guernica generates :
 
-- Bar charts: Additions vs. Removals
+- Bar charts : Additions vs. Removals
 - Chain-specific distribution charts
 - Chaos Index gauge with color-coded thresholds
 
@@ -109,4 +109,4 @@ Guernica generates :
 - Skip charts  
 `python guernica.py -b baseline.rules -a current.rules --no-visualization`
 ---
-Feel free to modify and use this code as you wish.
+Feel free to modify and use this code as you wish :)
