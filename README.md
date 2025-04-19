@@ -19,15 +19,15 @@ It transforms complex diffs into clear visual insights, helping you spot dangero
 
 ## How It Works
 
-Guernica’s workflow includes:
+Guernica processes two iptables configuration files (`.txt`, `.rules`, or `.iptables`) and follows these steps :
 
-- **Configuration Loading**: Loads and validates two iptables configuration files (baseline and modified)
-- **Normalization**: Cleans, standardizes, and fixes common syntax issues
-- **Differential Analysis**: Compares configurations to identify additions, removals, and changes
-- **Security Analysis**: Detects risky rule changes based on port usage and patterns
-- **Impact Calculation**: Computes the Chaos Index and other metrics
-- **Visualization**: Generates visual representations of the changes
-- **Reporting**: Outputs reports in terminal, HTML, or plain text
+1. **Load Configs** – Validates baseline and modified files  
+2. **Normalize** – Fixes common syntax issues  
+3. **Compare** – Detects added, removed, or changed rules  
+4. **Analyze** – Flags risky ports and patterns  
+5. **Calculate** – Computes the Chaos Index  
+6. **Visualize** – Generates charts and metrics  
+7. **Report** – Outputs in terminal, HTML, or plain text
 
 ---
 
@@ -35,7 +35,7 @@ Guernica’s workflow includes:
 
 ### Security Risk Detection
 
-Identifies:
+Identifies :
 
 - Critical ports (SSH, HTTP, DNS, databases, etc.)
 - Wide-open port ranges
@@ -45,7 +45,7 @@ Identifies:
 
 ### Rule Grouping
 
-Organizes changes by:
+Organizes changes by :
 
 - Port number (e.g., all changes affecting port 80)
 - Chain type (`INPUT`, `OUTPUT`, `FORWARD`)
@@ -57,7 +57,7 @@ Organizes changes by:
 
 A 0–100 metric that quantifies disruption introduced by rule changes.
 
-**Formula**:  
+**Formula** :  
 
 `Chaos Index = min(100, (raw_score / adaptive_max) * 100)`  
   - `raw_score = (additions × 1.5) + (removals × 1.0)`
@@ -78,7 +78,7 @@ A 0–100 metric that quantifies disruption introduced by rule changes.
 
 ## Visual Analysis
 
-Guernica generates:
+Guernica generates :
 
 - Bar charts: Additions vs. Removals
 - Chain-specific distribution charts
@@ -88,9 +88,9 @@ Guernica generates:
 
 ## Advanced Processing
 
-- **Normalization**: Auto-fixes common iptables syntax errors
-- **Validation**: Confirms file format correctness
-- **Flexible Formats**: Supports various iptables output styles
+- **Normalization** : Auto-fixes common iptables syntax errors
+- **Validation** : Confirms file format correctness
+- **Flexible Formats** : Supports various iptables output styles
 
 ---
 
