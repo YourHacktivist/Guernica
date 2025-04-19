@@ -9,11 +9,11 @@
 
 ## Overview
 
-**Guernica** is a powerful analysis tool designed for security professionals to detect and understand changes in `iptables` firewall configurations.  
+**Guernica** is an analysis tool designed for security professionals to detect and understand changes in `iptables` firewall configurations.  
   
-Inspired by Picasso’s iconic painting symbolizing turmoil, Guernica reveals the hidden risks in rule modifications and quantifies their impact through a unique metric: the **Chaos Index**.  
+Inspired by Picasso’s iconic painting symbolizing turmoil, Guernica reveals the hidden risks in rule modifications and quantifies their impact through a unique metric : the **Chaos Index**.  
   
-It transforms complex diffs into clear visual insights, helping you spot dangerous shifts before they become vulnerabilities.
+It turns complex differences into clear visual information, helping you spot dangerous changes in your firewall configurations before they become vulnerabilities in your information systems.
 
 
 ---
