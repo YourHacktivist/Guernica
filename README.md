@@ -109,4 +109,5 @@ Guernica generates :
 - Skip charts  
 `python guernica.py -b baseline.rules -a current.rules --no-visualization`
 ---
+This project is in its first version, still in beta. Over time, it aims to help network administrators better secure their firewall configurations.  
 Feel free to modify and use this code as you wish :)
